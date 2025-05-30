@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 // Try both environment variable formats to ensure compatibility
 let apiKey = import.meta.env.VITE_OPENAI_API_KEY || import.meta.env.OPENAI_API_KEY;
 const orgId = import.meta.env.VITE_OPENAI_ORG_ID || import.meta.env.OPENAI_ORG_ID;
-apiKey = "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";
+apiKey = "";
 if (!apiKey) {
   console.error('OpenAI API key is not defined in environment variables');
   console.error('Please check that either VITE_OPENAI_API_KEY or OPENAI_API_KEY is set in your .env file');
